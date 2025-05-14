@@ -145,17 +145,12 @@ strong {
   display: block;
 }
 
-.section__subtitle {
-  margin: 0;
-  font-size: var(--fs-h3);
-}
-
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  background: var(--dark-pink);
   padding: 0.25em 1em;
-  font-family: var(--ff-secondary);
   margin-bottom: 1em;
+  color: var(--light-yellow);
 }
 
 .section__subtitle--work {

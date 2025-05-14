@@ -1,8 +1,14 @@
 import "./App.css";
 import Header from "./components/header";
+import Intro from "./components/Intro";
 
 const App = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Intro />
+    </>
+  );
 };
 
 export default App;

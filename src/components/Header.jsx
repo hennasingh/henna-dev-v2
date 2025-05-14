@@ -1,9 +1,10 @@
+import codeLogo from "../assets/imgs/code-logo.png";
+
 export default function Header() {
   return (
     <header>
       <div className="logo">
-        <i className="fa-solid fa-laptop-code fa-xl"></i>
-        <h2>Henna Singh</h2>
+        <img className="code-logo" src={codeLogo} alt="code brackets" />
       </div>
       <button className="nav-toggle" aria-label="toggle-navigation">
         <span className="hamburger"></span>

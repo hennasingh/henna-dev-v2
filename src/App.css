@@ -26,7 +26,7 @@ html {
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #b0db43;
 
   --bs:
     0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125e,
@@ -117,7 +117,7 @@ strong {
 .btn {
   display: inline-block;
   padding: 0.5em 2.5em;
-  background: var(--light-blue);
+  background: var(--clr-accent);
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
@@ -146,7 +146,7 @@ strong {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--light-blue);
+  background: var(--clr-accent);
   padding: 0.25em 1em;
   margin-bottom: 1em;
 }
@@ -165,11 +165,8 @@ header {
   padding: 1em;
 }
 
-.logo {
-  display: flex;
-  gap: 1.2em;
-  align-items: center;
-  color: var(--dark-grey);
+.code-logo {
+  width: 50px;
 }
 
 .nav {
@@ -215,7 +212,7 @@ header {
   cursor: pointer;
   position: absolute;
   right: 1em;
-  top: 3em;
+  top: 1.8em;
   z-index: 1000;
 }
 
@@ -321,7 +318,7 @@ header {
 }
 
 .section__title--services {
-  color: var(--light-blue);
+  color: var(--clr-accent);
   position: relative;
 }
 
@@ -331,7 +328,7 @@ header {
   width: 2.5em;
   height: 2px;
   margin: 0.5em auto 1em;
-  background: var(--light-orange);
+  background: var(--clr-accent);
   opacity: 0.25;
 }
 
@@ -430,7 +427,6 @@ header {
 /* Footer */
 
 .footer {
-  background: #111;
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;

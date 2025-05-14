@@ -10,33 +10,37 @@ html {
 /** Custom Properties*/
 
 :root {
-  --ff-primary: "Montserrat", sans-serif;
-  --ff-secondary: "Lato", sans-serif;
+  /* font families */
+  --main: "Lato", sans-serif;
+  --heading: "Josefin Sans", sans-serif;
+  --mono: "Fira mono", monospace;
 
   --fw-reg: 300;
   --fw-bold: 900;
+
+  --light-blue: #7ecad8;
+  --light-orange: #de886d;
+  --dark-pink: #9f6272;
+  --dark-grey: #423c49;
+  --light-yellow: #e6eacf;
 
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-body: 1rem;
-
   --bs:
     0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125e,
     0.25em rgba(0, 0, 0, 0.15);
-}
 
-@media (min-width: 800px) {
-  :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
-  }
+  /* type scale */
+  --base-size: 1.2rem;
+  --scale: 1.25;
+  --h1: calc(var(--h2) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h5: calc(var(--h6) * var(--scale));
+  --h6: var(--base-size);
 }
 
 /* General Styles */
@@ -48,11 +52,47 @@ html {
 body {
   background: url(./assets/imgs/body-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   color: var(--clr-dark);
   margin: 0;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-body);
-  line-height: 1.6;
+  padding: 0;
+  font-family: var(--main);
+  font-size: var(--base-size);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+}
+h1 {
+  font-size: var(--h1);
+  margin: 0;
+}
+h2 {
+  font-size: var(--h2);
+  margin: 0;
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+h6 {
+  font-size: var(--h6);
+}
+.mono {
+  font-family: var(--mono);
 }
 
 section {
@@ -91,25 +131,6 @@ strong {
 
 .btn:hover {
   transform: scale(1.1);
-}
-
-/* Typography */
-
-h1,
-h2,
-h3 {
-  line-height: 1;
-  margin: 0;
-}
-
-h1 {
-  font-size: var(--fs-h1);
-}
-h2 {
-  font-size: var(--fs-h2);
-}
-h3 {
-  font-size: var(--fs-h3);
 }
 
 .section__title {
@@ -152,7 +173,10 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+  color: var(--dark-grey);
 }
 
 .nav {
@@ -198,7 +222,7 @@ header {
   cursor: pointer;
   position: absolute;
   right: 1em;
-  top: 1em;
+  top: 3em;
   z-index: 1000;
 }
 
@@ -230,9 +254,9 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-accent);
-  width: 2em;
-  height: 3px;
+  background: var(--dark-grey);
+  width: 3em;
+  height: 4px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
 }
@@ -246,10 +270,10 @@ header {
 }
 
 .hamburger::before {
-  top: 6px;
+  top: 8px;
 }
 .hamburger::after {
-  bottom: 6px;
+  bottom: 8px;
 }
 
 /* Intro section */

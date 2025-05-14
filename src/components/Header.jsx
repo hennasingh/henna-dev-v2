@@ -2,7 +2,8 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        <img src="" alt="" />
+        <i class="fa-solid fa-laptop-code fa-xl"></i>
+        <h2>Henna Singh</h2>
       </div>
       <button className="nav-toggle" aria-label="toggle-navigation">
         <span className="hamburger"></span>

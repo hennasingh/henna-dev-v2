@@ -46,7 +46,8 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background: url(./assets/imgs/body-bg.jpg);
+  background-repeat: no-repeat;
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);

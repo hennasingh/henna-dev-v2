@@ -55,7 +55,11 @@ export default function Footer() {
             <h3>Community Building</h3>
             <ul>
               <li>
-                <a href="https://gdg.community.dev/gdg-dublin/">
+                <a
+                  href="https://gdg.community.dev/gdg-dublin/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   GDG Dublin - Co-Organizer
                 </a>
               </li>

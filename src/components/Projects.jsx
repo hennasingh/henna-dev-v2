@@ -35,6 +35,7 @@ export default function Projects() {
       <p className="section__subtitle section__subtitle--work">
         A selection of my projects
       </p>
+      <div className="projects">{projectList}</div>
     </section>
   );
 }

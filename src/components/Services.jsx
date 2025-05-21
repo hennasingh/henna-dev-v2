@@ -4,7 +4,7 @@ export default function Services() {
       <h2 className="section__title section__title--services">What I do</h2>
       <div className="services">
         <div className="service">
-          <h3>Development</h3>
+          <h3>Development & Design</h3>
           <p>
             I am a continuous learner that enjoys building applications in React
             JS, Typescript, HTML, CSS, Django, postgres,and Heroku.

@@ -12,7 +12,7 @@ export default function Projects() {
         const { data } = await supabase
           .from("portfolio_projects")
           .select("*")
-          .order("created_at");
+          .order("created_at", { ascending: false });
         setProjects(data);
         setLoading(false);
       } catch (error) {

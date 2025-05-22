@@ -27,6 +27,30 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          <div className="footer-text-box">
+            <h3>Community Building</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://gdg.community.dev/gdg-dublin/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GDG Dublin - Co-Organizer
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.mongodb.com/community/forums/t/join-us-in-the-adventure-of-100daysofcode/147472"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  100 Days of Code
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className="footer-text-box">
             <h3>Advocacy</h3>
             <ul>
@@ -47,29 +71,6 @@ export default function Footer() {
                 >
                   MongoDB.live - Best Practices: Performance and Monitoring for
                   Realm Sync
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-text-box">
-            <h3>Community Building</h3>
-            <ul>
-              <li>
-                <a
-                  href="https://gdg.community.dev/gdg-dublin/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GDG Dublin - Co-Organizer
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.mongodb.com/community/forums/t/join-us-in-the-adventure-of-100daysofcode/147472"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  100 Days of Code
                 </a>
               </li>
             </ul>

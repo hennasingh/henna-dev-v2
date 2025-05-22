@@ -154,6 +154,12 @@ strong {
   margin-bottom: 1em;
 }
 
+.section__title--work,
+.section__subtitle--work {
+  text-align: right;
+  margin-right: 1.5rem;
+}
+
 .section__subtitle--work {
   color: var(--dark-pink);
   font-weight: var(--fw-bold);
@@ -462,6 +468,10 @@ svg {
 
   .footer-text {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-text-box {
+    align-items: flex-start;
   }
 
   .footer-text .social-list {
